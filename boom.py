@@ -1,11 +1,11 @@
-import requests, os, json
+import  os
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
 
 app = Flask(__name__)
 familybotid = "a2dc0da36676eec3febf7df4de"
 funguys = "db6fba2dad56160da5223dcdf0"
-app.config.from_object(os.environ['APP_SETTINGS'])	 
+ 
 def groupmesend(botid, message2group):
 	website = "https://api.groupme.com/v3/bots/post"
 	botparams = {
@@ -46,10 +46,4 @@ def highlands():
 		if  boom['text'] is []:
                         groupmesend(funguys, "You Most Likely Just Got Haid!!")
 					
-
-	return "All Good"
-def main():
-        print 'Starting'
  
-if __name__ == "__main__":
-    app.run()
