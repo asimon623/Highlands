@@ -1,1 +1,1 @@
-web: gunicorn where:app
+web: gunicorn boom:app
