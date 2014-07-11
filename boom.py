@@ -43,8 +43,8 @@ def highlands():
 		if  boom['text'] is []:
                         groupmesend(funguys, "You Most Likely Just Got Haid!!")
 
-@app.route('/hello', methods=['POST])
-def hello():
+@app.route('/1hello', methods=['POST'])
+def ahello():
 	name = request.data['text']
 	return name
 					
