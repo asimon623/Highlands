@@ -24,11 +24,8 @@ def family():
 	#groupmesend(familybotid, "No one cares")
 	messageData = request.data
 	boom = json.loads(messageData)
-	if "hello" in  boom['text'].lower():
+	if "hello" in boom['text'].lower():
 		groupmesend(familybotid, "No one cares")
-#	if  boom['attachments'] != [] :
-#		groupmesend(familybotid, "haid")
-	return "All good"
 
 @app.route('/highlands', methods=['POST'])
 def highlands():
