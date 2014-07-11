@@ -45,7 +45,7 @@ def highlands():
 
 @app.route('/hello', methods=['POST])
 def hello():
-	name = request.form['text']
+	name = request.data['text']
 	return name
 					
  
