@@ -1,4 +1,4 @@
-import  os
+import  os, requests
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
 
@@ -24,11 +24,10 @@ def family():
 	#groupmesend(familybotid, "No one cares")
 	messageData = request.data
 	boom = json.loads(messageData)
-	print boom
-	if "hello" in  boom['text']:
+	if "hello" in  boom['text'].lower():
 		groupmesend(familybotid, "No one cares")
-	if  boom['attachments'] != [] :
-		groupmesend(familybotid, "haid")
+#	if  boom['attachments'] != [] :
+#		groupmesend(familybotid, "haid")
 	return "All good"
 
 @app.route('/highlands', methods=['POST'])
