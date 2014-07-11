@@ -42,6 +42,11 @@ def highlands():
 			 groupmesend(funguys, "Drew is nowhere to be found, unfortunately!")
 		if  boom['text'] is []:
                         groupmesend(funguys, "You Most Likely Just Got Haid!!")
+
+@app.route('/hello', methods=['POST])
+def hello():
+	name = request.form['text]
+	return name
 					
  
 if __name__ == "__main__":
