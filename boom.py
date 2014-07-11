@@ -3,6 +3,7 @@ from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
 
 app = Flask(__name__)
+app.secret_key = 'A0Zr98j/3yX R~XP3r!jmN]LWX/,?RT'
 familybotid = "a2dc0da36676eec3febf7df4de"
 funguys = "db6fba2dad56160da5223dcdf0"
  
