@@ -20,8 +20,8 @@ def family():
 	messageData = request.data
 	boom = json.loads(messageData)
 	print boom
-	#if "hello" in  boom['text']:
-		#groupmesend(familybotid, "No one cares")
+	if "hello" in  boom['text']:
+		groupmesend(familybotid, "No one cares")
 	if  boom['attachments'] != [] :
 		groupmesend(familybotid, "haid")
 	return "All good"
