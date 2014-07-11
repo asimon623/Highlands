@@ -14,6 +14,11 @@ def groupmesend(botid, message2group):
 	}
 	requests.post(website, data = botparams)
 
+@app.route('/')
+def hello():
+	return "Hello World!"
+
+
 @app.route('/family', methods=['POST'])
 def family():
 	#groupmesend(familybotid, "No one cares")
