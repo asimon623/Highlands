@@ -39,7 +39,8 @@ def highlands():
 		if "where are" in boom['text'].lower():
 			groupmesend(funguys, "We're in the Highlands")
 		elif "drew" in boom['text'].lower():
-			 groupmesend(funguys, "Drew is nowhere to be found, unfortunately!")
+			if "withdrew" not in boom['text'].lower():
+			  groupmesend(funguys, "Drew is nowhere to be found, unfortunately!")
 		if  boom['text'] is []:
                         groupmesend(funguys, "You Most Likely Just Got Haid!!")
 
